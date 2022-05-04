@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* FUENTES TIPOGRAFICAS */
+@font-face {
+  font-family: "fanwood";
+  src: url("../fanwood/fanwood.regular.ttf");
+}
+@font-face {
+  font-family: "fanwood-italic";
+  src: url("../fanwood/fanwood.italic.ttf");
+}
+/*VARIABLES COLORES*/
+/*VARIABLES TIPOGRAFÍA*/
+/*MENU*/
+.nav {
+  background-color: #F0E7D9;
+}
+.nav .logo {
+  width: 10%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.nav .item {
+  font-family: "Montserrat", sans-serif;
+  color: #484848;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #292929;
+  padding: 0.5%;
+}
+.footer .legales {
+  font-family: "Montserrat", sans-serif;
+  color: #F0E7D9;
+}
+
+/*SLIDER HOME*/
+.slider .titulo {
+  font-family: "Fanwood";
+  text-align: center;
+  color: #F0E7D9;
+}
+.slider .subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #8DA47C;
+  text-align: center;
+}
+
+/*NUESTROS SERVICIOS*/
+.nuestros-servicios {
+  background-color: #F0E7D9;
+  padding: 5%;
+}
+.nuestros-servicios .imagen_home {
+  background-image: url(../img/Home_gestoria.png);
+}
+.nuestros-servicios .imagen_home_2 {
+  background-image: url(../img/Home_servicios\ jurídicos.png);
+}
+.nuestros-servicios .subtitulo {
+  font-family: "Fanwood";
+  text-align: center;
+  color: #F0E7D9;
+  line-height: 100%;
+  margin-bottom: 30%;
+}
+
+/*NUESTRO ESTUDIO*/
+.estudio, .estudio_2 {
+  background-color: #5F774D;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.estudio .subtitulo, .estudio_2 .subtitulo {
+  font-family: "fanwood-italic";
+  color: #F0E7D9;
+  line-height: 100%;
+}
+.estudio .parrafo, .estudio_2 .parrafo {
+  font-family: "Montserrat", sans-serif;
+  color: #F0E7D9;
+}
+
+.estudio_2 {
+  background-color: #01406B;
+}
+.estudio_2 .nombre_ceo {
+  font-family: "Montserrat", sans-serif;
+  color: #F0E7D9;
+}
+
+/*OPINIONES*/
+.opiniones {
+  background-color: #F0E7D9;
+}
+.opiniones .subtitulo {
+  font-family: "Fanwood";
+  text-align: center;
+  color: #5F774D;
+  line-height: 100%;
+}
+.opiniones .nombres {
+  font-family: "Montserrat", sans-serif;
+  color: #5F774D;
+}
+.opiniones .parrafo {
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+}
+
+/*NEWSLETTER*/
+.newsletter {
+  background-color: #01406B;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.newsletter .subtitulo {
+  font-family: "Fanwood";
+  text-align: center;
+  color: #F0E7D9;
+}
+
+/*QUIENES SOMOS*/
+.encabezado_subsecciones {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.encabezado_subsecciones .titulo {
+  font-family: "Fanwood";
+  color: #F0E7D9;
+  font-size: 60px;
+  line-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.caja_mision {
+  background-color: #F0E7D9;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.caja_mision .centrado {
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 1%;
+}
+.caja_mision .subtitulo {
+  font-family: "Montserrat", sans-serif;
+  color: #01406B;
+  text-align: center;
+}
+.caja_mision .parrafo {
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+  text-align: justify;
+}
+
+.padding {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/*INFOGRAFIA*/
+.caja_infografia {
+  background-color: #C1B4A4;
+  display: block;
+  padding: 40px 20px 37px;
+  text-align: center;
+}
+.caja_infografia .titulo {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 1000;
+  color: #F0E7D9;
+  line-height: 28px;
+}
+.caja_infografia .subtitulo {
+  margin: 5px 0 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  color: #F0E7D9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.padding_2 {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*INFOGRAFIA MIXIN*/
+.subtitulo_mixin {
+  font-family: "Fanwood";
+  color: #F0E7D9;
+  background-color: #01406B;
+  text-align: center;
+}
+
+.contenedor_mixin {
+  background-color: #01406B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+}
+.contenedor_mixin .titulo {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 1000;
+  color: #F0E7D9;
+  line-height: 28px;
+}
+.contenedor_mixin .subtitulo {
+  margin: 5px 0 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  color: #F0E7D9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mixin_1, .mixin_3, .mixin_2 {
+  width: 20%;
+  height: 150px;
+  background-color: #C1B4A4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mixin_2 {
+  width: 30%;
+  height: 150px;
+  background-color: #8DA47C;
+}
+
+.mixin_3 {
+  width: 30%;
+  height: 150px;
+  background-color: #C1B4A4;
+}
+
+/* MAPS*/
+.boton_whatsapp {
+  background-color: #2EB025;
+  width: 28px;
+  height: 28px;
+}
+
+.boton_facebook {
+  background-color: #3a5795;
+  width: 28px;
+  height: 28px;
+}
+
+.boton_instagram {
+  background-color: #C73292;
+  width: 28px;
+  height: 28px;
+}
+
+/* GESTORIA Y SERVICIOS JURIDICOS*/
+.fondo_gestoria {
+  background-color: #F0E7D9;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.fondo_gestoria .titulo {
+  font-family: "Fanwood";
+  text-align: left;
+  color: #551725;
+  font-size: 150%;
+}
+
+/* CONTACTO*/
+.contacto {
+  background-color: #F0E7D9;
+  padding-top: 3%;
+}
+.contacto .centrado {
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 1%;
+}
+.contacto .subtitulo {
+  font-family: "Fanwood";
+  color: #551725;
+  line-height: 100%;
+}
+.contacto .input {
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+  border-bottom: 2px solid #5F774D;
+  margin-top: 10px;
+  background-color: #F0E7D9;
+}
+.contacto .txt_form, .contacto select {
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+}
+/**/
+
+/*# sourceMappingURL=style.css.map */
