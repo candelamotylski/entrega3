@@ -165,7 +165,6 @@ $montserrat: 'Montserrat', sans-serif;
     .titulo{
         font-family: $fanwood; 
         color: $color-crema;
-        font-size: 60px;
         line-height:100%;
         position: absolute;
         top: 50%;
@@ -241,85 +240,6 @@ $montserrat: 'Montserrat', sans-serif;
     align-items: center;
 }
 
-/*INFOGRAFIA MIXIN*/
-.subtitulo_mixin{
-    font-family: $fanwood;
-    color: $color-crema;
-    background-color: $color-azul;
-    text-align: center;
-}
-
-.contenedor_mixin{
-    background-color: $color-azul;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2%;
-
-    .titulo{
-        display: block;
-        font-family: 'Montserrat';
-        font-size: 32px;
-        font-weight: 1000;
-        color: $color-crema;
-        line-height: 28px
-    }
-
-    .subtitulo{
-        margin: 5px 0 0;
-        font-family: $montserrat;
-        padding: 0;
-        color: $color-crema;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-}
-
-@mixin infografia ($ancho,$alto){
-width: $ancho;
-height: $alto;    
-}
-
-.mixin_1{
-    @include infografia(20%, 150px);
-    background-color: $color-crema-oscuro;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.mixin_2{
-    @extend .mixin_1;
-    @include infografia(30%, 150px);
-    background-color: $color-verde-claro;
-}
-
-.mixin_3{
-    @extend .mixin_1;
-    @include infografia(30%, 150px);
-    background-color: $color-crema-oscuro;
-}
-
-/* MAPS*/
-$mapa:(
-    /* clave: valor */
-    whatsapp:  #2EB025,
-    facebook:  #3a5795,
-    instagram: #C73292,
-);
-
-@each $red, $color in $mapa {
-    // fragmento que repite
-    .boton_#{$red} {
-      background-color: $color;
-      width: 28px;
-      height: 28px;
-      
-    }
-  }
-
 /* GESTORIA Y SERVICIOS JURIDICOS*/
 .fondo_gestoria{
     background-color: $color-crema;
@@ -339,7 +259,7 @@ $mapa:(
     padding-top: 3%;
 
     .centrado{
-        margin-left: 50%;
+        margin-left: 20%;
         transform: translate(-50%,);
         margin-bottom: 1%;
     }
@@ -368,4 +288,5 @@ $mapa:(
     }
 
 }
+
 /**/
